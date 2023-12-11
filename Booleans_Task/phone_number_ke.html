@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let phone_num = prompt("Enter the phone number")
+        if (phone_num.startsWith("+254") && phone_num.length == 13) {
+            valid = "True"
+        }
+        else if (phone_num.startsWith("254") && phone_num.length == 12) {
+            valid = "True"
+        }
+        else if (phone_num.startsWith("07") && phone_num.length == 10) {
+            valid = "True"
+        }
+        else if (phone_num.startsWith("7") && phone_num.length == 9) {
+            valid = "True"
+        }
+        else if (phone_num.startsWith("01") && phone_num.length == 10) {
+            valid = "True"
+        }
+        else if (phone_num.startsWith("1") && phone_num.length == 9) {
+            valid = "True"
+        }
+        else {
+            valid = "The number is not existing"
+        }
+        alert(valid)
+
+
+
+    </script>
+</body>
+
+</html>
