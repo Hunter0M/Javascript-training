@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Write a program that calculates the total stock in a company 
+        // from the array / list below if we know that the stock is the last 
+        // digit in every array / list.
+
+        // //     prods =[[‘omo’,’30kshs’,’300’], [‘milk’,’50kshs’,’200’], 
+        // [‘bread’,’45kshs’,’359’], [‘coffee’,’5kshs’,’79’]]
+        let total_stock = 0
+        let sto=[]
+        let prods = [['omo', '30kshs', '300'], ['milk', '50kshs', '200'],
+        ['bread', '45kshs', '359'], ['coffe', '5kshs', '79']]
+        for (i=0;i<prods.length;i++){
+            let N_prods=prods[i][2]
+            let stock=Number(N_prods)
+            total_stock+=stock
+            sto=total_stock
+            sto.push[i]
+        }
+        console.log(sto)
+
+
+
+    </script>
+</body>
+
+</html>

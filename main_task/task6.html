@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const saved_password = 'admin@123'
+        // let trials = 0
+        // let users_password = prompt("Enter the password: ")
+        // if (users_password == saved_password) {
+        //     alert('Access Granted!')
+        // }
+        // else {
+        //     for (trials = 0; trials < 3; trials++) {
+        //         let trial_password = prompt("Try again: ")
+        //         if (trial_password == saved_password) {
+        //             alert('Access Granted. ')
+        //             { break }
+        //         }
+        //     }
+        //     if (trials == 3) {
+        //         alert('The Account is blocked !!! ')
+        //     }
+        // }
+
+        
+        let counter = 4; // Remaining attempts
+
+        function login() {
+            const enteredPassword = prompt(`Enter password (attempts remaining: ${counter} )`);
+
+            if (enteredPassword === "admin@123") {
+                // Password correct, grant access
+                console.log("Access granted!");
+                return; // Don't need further attempts
+            }
+
+            counter--; // Decrement remaining attempts
+
+            if (counter === 0) {
+                // Account locked after 4 attempts
+                console.log("Account blocked incorrect attempts!");
+                return;
+            }
+
+            console.log(`Incorrect password. You have ${counter} attempts remaining.`);
+            login(); // Retry input
+        }
+
+        login(); // Start login process
+
+
+    </script>
+</body>
+
+</html>

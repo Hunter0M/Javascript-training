@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let date_birth=prompt("Enter the date of birth year,month,date")
+        let today = new Date()
+        let birth_date = new Date(date_birth)
+        let day = today.getDay() - birth_date.getDay()
+        let month = today.getMonth() - birth_date.getMonth()
+        let years = today.getFullYear() - birth_date.getFullYear()
+        console.log( birth_date)
+        console.log(day)
+        console.log(month)
+        console.log(years)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let car_speed = prompt('Enter the speed')
+        let SPEED_LIMIT = 70; // Define speed limit
+        let d_points = 1
+        if (car_speed <= SPEED_LIMIT) {
+            console.log("OK")
+        }
+        else if (car_speed > SPEED_LIMIT && car_speed <= 75) {
+            
+        }
+        else {
+            d_points = Math.floor((car_speed - 75) / 5);
+        }if(d_points>12){
+            console.log("License suspended")
+        }
+
+        //         const SPEED_LIMIT = 70; // Define speed limit
+
+        // function calculateDemeritPoints(carSpeed) {
+        //   // Validate the speed input
+        //   if (isNaN(carSpeed) || carSpeed < 0) {
+        //     throw new Error("Invalid speed! Please enter a positive number.");
+        //   }
+
+        //   // Check if speed is within limit
+        //   if (carSpeed <= SPEED_LIMIT) {
+        //     return "Ok";
+        //   }
+
+        //   // Calculate demerit points based on exceeding speed
+        //   const demeritPoints = Math.floor((carSpeed - SPEED_LIMIT) / 5);
+
+        //   // Display message and points
+        //   const speedingMsg = `You are exceeding the speed limit by ${carSpeed - SPEED_LIMIT} km/s.`;
+        //   if (demeritPoints === 1) {
+        //     console.log(`${speedingMsg} You have received ${demeritPoints} demerit point.`);
+        //   } else {
+        //     console.log(`${speedingMsg} You have received ${demeritPoints} demerit points.`);
+        //   }
+
+        //   return demeritPoints;
+        // }
+
+        // // Example usage
+        // const carSpeed = 85;
+
+        // try {
+        //   const points = calculateDemeritPoints(carSpeed);
+        //   console.log("Total demerit points:", points);
+        // } catch (error) {
+        //   console.error(error.message);
+        // }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
