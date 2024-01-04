@@ -299,7 +299,38 @@
         padding: 20px 0px 0px 27%;
     }
 }
+@media(min-width:412px)and (max-width:992px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
 
+    .navbar {
+        padding: 10px 0px 321px 12%;
+    }
+
+    .navbar1 {
+        padding: 10px 0px 0px 25.5%;
+    }
+    .h1_1 {
+        padding-top: 15%;
+        padding-left: 11%;
+        opacity: 0.6;
+    }
+
+    .p_1 {
+        padding-top: 23.5%;
+        padding-left: 49px;
+    }
+
+    .table_parent {
+        margin: 30% 17px 0px 17px;
+
+        th,
+        td {
+            line-height: 25px;
+        }
+    }
+}
 @media(min-width:450px)and (max-width:992px) {
     body {
         background-color: rgb(228, 230, 230);
