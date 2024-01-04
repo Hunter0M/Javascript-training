@@ -8,11 +8,34 @@
 </head>
 
 <body>
+    <form id="area_of_triangle" action="">
+        <label for="Base_triangle">Base_triangle</label>
+        <input id="Base_triangle" type="text"><br>
+        <label for="height_triangle">height_triangle</label>
+        <input id="height_triangle" type="text"><br>
+        <input type="submit" value="total_area">
+    </form>
+    <h1 id="area_triangle"></h1>
     <script>
-        let base = prompt('Enter the base')
-        let height = prompt('Enter the height')
-        let area = base * height
-        alert(area)
+        let form=document.getElementById("area_of_triangle")
+        form.addEventListener("submit",function(e){
+           //  Prevent the webpage from refreshing
+           e.preventDefault();
+           // Check if inputs have values
+            let Base_triangle=document.getElementById("Base_triangle").value;
+            let height_triangle=document.getElementById("height_triangle").value;
+
+            if(Base_triangle.length==0&&height_triangle.length==0){
+                document.getElementById('area_triangle').innerHTML="insert values"
+
+            }else{
+                let area=(Base_triangle*height_triangle)/2
+                document.getElementById("area_triangle").innerHTML=area
+            }
+        })
+
+
+        
     </script>
 </body>
 

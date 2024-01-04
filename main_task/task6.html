@@ -8,27 +8,29 @@
 </head>
 
 <body>
+    <form id="password_form" action="">
+        <label for="password">Enter password</label>
+        <input id="password" type="text">
+        <input type="submit" value="click here">
+    </form>
+    <h1 id="pass"></h1>
     <script>
-        // const saved_password = 'admin@123'
-        // let trials = 0
-        // let users_password = prompt("Enter the password: ")
-        // if (users_password == saved_password) {
-        //     alert('Access Granted!')
-        // }
-        // else {
-        //     for (trials = 0; trials < 3; trials++) {
-        //         let trial_password = prompt("Try again: ")
-        //         if (trial_password == saved_password) {
-        //             alert('Access Granted. ')
-        //             { break }
-        //         }
-        //     }
-        //     if (trials == 3) {
-        //         alert('The Account is blocked !!! ')
-        //     }
-        // }
+        let form = document.getElementById("password_form")
+        form.addEventListener("submit", function (e) {
+            //  Prevent the webpage from refreshing
+            e.preventDefault();
 
-        
+            // Check if inputs have values
+            let password=document.getElementById("password")
+            if(password.length==0){
+                document.getElementById("pass").innerHTML="Enter your password"
+            }
+            
+            
+
+            
+        })
+            
         let counter = 4; // Remaining attempts
 
         function login() {
@@ -53,6 +55,43 @@
         }
 
         login(); // Start login process
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // const saved_password = 'admin@123'
+        // let trials = 0
+        // let users_password = prompt("Enter the password: ")
+        // if (users_password == saved_password) {
+        //     alert('Access Granted!')
+        // }
+        // else {
+        //     for (trials = 0; trials < 3; trials++) {
+        //         let trial_password = prompt("Try again: ")
+        //         if (trial_password == saved_password) {
+        //             alert('Access Granted. ')
+        //             { break }
+        //         }
+        //     }
+        //     if (trials == 3) {
+        //         alert('The Account is blocked !!! ')
+        //     }
+        // }
+
+        
 
 
     </script>

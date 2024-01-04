@@ -8,19 +8,61 @@
 </head>
 
 <body>
+    <form id="even_odd" action="">
+        <label for="EvenOdd">Enter the number</label>
+        <input id="EvenOdd" type="text"><br>
+        <input type="submit" value="Enter">
+    </form>
+    <h1 id="num_even"></h1>
+    <h1 id="div_by 4"></h1>  ?
     <script>
-        let number = prompt('Enter the number')
-        if (number % 2 == 0) {
-            num = "The number is even"
-        }
-        else if( number %4==0){
-            num1="divisible by 4"
-        }
-        else {
-            num = "The number is odd"
-        }
-        console.log(num)
-        console.log(num1)
+        let form = document.getElementById("even_odd")
+        form.addEventListener("submit", function (e) {
+            //  Prevent the webpage from refreshing
+            e.preventDefault();
+            // Check if inputs have values
+
+            let EvenOdd = document.getElementById("EvenOdd").value;
+
+            if (EvenOdd.length == 0) {
+                document.getElementById("num_even").innerHTML = "insert value"
+            }
+            else if (EvenOdd % 2 == 0) {
+                let num = "The number is even"
+                document.getElementById("num_even").innerHTML =num
+            }
+
+            else if (EvenOdd % 4 == 0) {
+                let num1 = "divisible by 4"
+                document.getElementById("div_by 4").innerHTML =num1
+            }
+
+            else {
+                num = "The number is odd"
+                document.getElementById("num_even").innerHTML =num
+            }
+
+
+
+
+
+
+        })
+
+
+
+        // let number = prompt('Enter the number')
+        // if (number % 2 == 0) {
+        //     num = "The number is even"
+        // }
+        // else if( number %4==0){
+        //     num1="divisible by 4"
+        // }
+        // else {
+        //     num = "The number is odd"
+        // }
+        // console.log(num)
+        // console.log(num1)
     </script>
 </body>
 

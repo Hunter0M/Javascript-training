@@ -1,0 +1,796 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* .salary_parent {
+    display: flex;
+    background-color: white;
+    flex-flow: column wrap;
+    justify-content: center;
+} */
+
+/* .navbar {
+    position: absolute;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(34, 156, 215);
+    padding: 0px 12px 250px 14%;
+}
+
+.navbar1 {
+    position: absolute;
+    font-weight: lighter;
+    font-size: 35px;
+    color: rgb(34, 156, 215);
+    padding-left: 200px;
+    padding-bottom: 250px;
+}
+
+.h1_1 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    text-transform: uppercase;
+    padding-top: 10%;
+    padding-left: 8%;
+    font-size: 27px;
+    opacity: 0.7;
+} */
+
+/* .p_1 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    padding-top: 14%;
+    padding-left: 80px;
+    padding-bottom: 20px;
+    font-size: 70%;
+    opacity: 0.5;
+} */
+
+/* .table_parent {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-bottom: 23px;
+    z-index: 1;
+    box-shadow: -5px -2px 5px 2px rgb(187, 181, 181);
+    border-radius: 5px 5px 5px 5px;
+    margin: 80px 17px 0px 17px;
+
+    th,
+    td {
+        width: 10%;
+        line-height: normal;
+        padding: px 10px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid rgb(157, 153, 153);
+        border-collapse: collapse;
+        background-color: rgb(245, 245, 245);
+    }
+} */
+
+/* .text_input {
+    opacity: 0.6;
+    border-color: black;
+    border-radius: 3px 0px 0px 3px;
+
+} */
+
+
+/* .salary_item {
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+@media only screen and (max-width:340px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        position: absolute;
+        font-weight: bold;
+        font-size: 35px;
+        color: rgb(34, 156, 215);
+        padding: 30px 0px 350px 13%;
+    }
+
+    .navbar1 {
+        position: relative;
+        font-weight: lighter;
+        font-size: 35px;
+        color: rgb(34, 156, 215);
+        padding: 30px 0px 0px 29%;
+    }
+
+    .h1_1 {
+
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        text-transform: uppercase;
+        padding-top: 5%;
+        padding-left: 4.9%;
+        font-size: 27px;
+        opacity: 0.7;
+    }
+
+    .p_1 {
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        padding-top: 15%;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        font-size: 105%;
+        opacity: 0.5;
+    }
+
+    .table_parent {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        padding-left: 4px;
+        padding-top: 15px;
+        z-index: 1;
+        box-shadow: -5px -2px 5px 2px rgb(146, 142, 142);
+        border-radius: 5px 5px 5px 3%;
+        margin: 9px 17px 20px 17px;
+
+        th,
+        td {
+            width: 10%;
+            line-height: normal;
+            padding: 5px 0px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid rgb(157, 153, 153);
+            border-collapse: collapse;
+            background-color: rgb(240, 236, 236);
+        }
+    }
+}
+
+/* .salary-form{
+    font-size: x-large;
+}
+.label_form{
+        font-size: 10%;
+    
+    } */
+@media(min-width:341px)and (max-width:992px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        position: absolute;
+        font-weight: bold;
+        font-size: 35px;
+        color: rgb(34, 156, 215);
+        padding: 20px 0px 321px 12%;
+
+    }
+
+    .navbar1 {
+        position: absolute;
+        font-weight: lighter;
+        font-size: 35px;
+        color: rgb(34, 156, 215);
+        padding: 20px 0px 0px 26%;
+    }
+
+    .salary_parent {
+        flex-direction: column;
+
+        .btn_form {
+            background-color: blue;
+            color: brown;
+        }
+    }
+
+    .h1_1 {
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        text-transform: uppercase;
+        padding-top: 21%;
+        padding-left: 10%;
+        font-size: 27px;
+        opacity: 0.7;
+    }
+
+    .p_1 {
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        padding-top: 30%;
+        padding-left: 38px;
+        padding-bottom: 20px;
+        font-size: 70%;
+        opacity: 0.5;
+    }
+
+    .table_parent {
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        padding: 15px 4px 10px 4px;
+        z-index: 1;
+        box-shadow: -5px -2px 5px 2px rgb(187, 181, 181);
+        border-radius: 5px 5px 5px 5px;
+        margin: 40% 17px 0px 17px;
+
+        th,
+        td {
+            width: 10%;
+            line-height: 25px;
+            padding: px 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid rgb(157, 153, 153);
+            border-collapse: collapse;
+            background-color: rgb(245, 245, 245);
+        }
+    }
+
+    .text_input {
+        opacity: 0.6;
+        border-color: black;
+        border-radius: 3px 0px 0px 3px;
+    }
+}
+
+@media(min-width:400px)and (max-width:992px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        padding: 20px 0px 321px 12%;
+    }
+
+    .navbar1 {
+        padding: 20px 0px 0px 20%;
+    }
+}
+
+@media(min-width:390px)and (max-width:993px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        padding: 20px 0px 321px 30%;
+    }
+
+    .navbar1 {
+        padding: 20px 0px 0px 26%;
+    }
+}
+
+@media(min-width:380px)and (max-width:992px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        padding: 20px 0px 321px 12%;
+    }
+
+    .navbar1 {
+        padding: 20px 0px 0px 27%;
+    }
+}
+
+@media(min-width:370px)and (max-width:992px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        padding: 20px 0px 321px 12%;
+    }
+
+    .navbar1 {
+        padding: 20px 0px 0px 27%;
+    }
+}
+
+@media(min-width:450px)and (max-width:992px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        padding: 40px 0px 321px 12%;
+    }
+
+    .navbar1 {
+        padding: 40px 0px 0px 25%;
+    }
+}
+
+@media(min-width:470px)and (max-width:992px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        padding: 40px 0px 321px 12%;
+    }
+
+    .navbar1 {
+        padding: 40px 0px 0px 24%;
+
+    }
+
+    .p_1 {
+        padding-top: 32%;
+        padding-left: 49px;
+    }
+}
+
+@media(min-width:510px)and (max-width:992px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        padding: 40px 0px 321px 16%;
+    }
+
+    .navbar1 {
+        padding: 40px 0px 0px 27%;
+    }
+
+    .h1_1 {
+        padding-top: 17%;
+        padding-left: 11%;
+        opacity: 0.6;
+    }
+
+    .p_1 {
+        padding-top: 23.5%;
+        padding-left: 57px;
+    }
+
+    .table_parent {
+        margin: 31% 17px 0px 17px;
+
+        th,
+        td {
+            line-height: 28px;
+        }
+    }
+}
+
+@media(min-width:570px)and (max-width:992px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        padding: 20px 0px 321px 13%;
+    }
+
+    .navbar1 {
+        padding: 20px 0px 0px 22%;
+
+    }
+    .h1_1 {
+        padding-top: 11%;
+        padding-left:9%;
+    }
+
+    .p_1 {
+        padding-top: 17%;
+        padding-left: 56px;
+    }
+
+    .table_parent {
+        margin: 23% 17px 0px 17px;
+
+        th,
+        td {
+            line-height: 30px;
+        }
+    }
+}
+
+@media(min-width:630px)and (max-width:992px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        padding: 10px 0px 321px 13%;
+    }
+
+    .navbar1 {
+        padding: 10px 0px 0px 21.4%;
+
+    }
+    .h1_1 {
+        padding-top: 9%;
+        padding-left: 9%;
+    }
+
+    .p_1 {
+        padding-top: 14%;
+        padding-left: 60px;
+    }
+
+    .table_parent {
+        margin: 20% 17px 0px 17px;
+        th,td {
+            line-height: 30px;
+        }
+    }
+}
+
+@media(min-width:700px)and (max-width:992px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        padding: 10px 0px 321px 13%;
+    }
+
+    .navbar1 {
+        padding: 10px 0px 0px 21%;
+    }
+    .h1_1 {
+        padding-top: 8%;
+        padding-left: 10%;
+    }
+
+    .p_1 {
+        padding-top: 12.8%;
+        padding-left: 74px;
+    }
+
+    .table_parent {
+        margin: 18% 17px 0px 17px;
+
+        th,
+        td {
+            line-height: 35px;
+        }
+    }
+}
+
+@media(min-width:800px)and (max-width:992px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        padding: 10px 0px 321px 13%;
+    }
+
+    .navbar1 {
+        padding: 10px 0px 0px 20%;
+
+    }
+    .h1_1 {
+        padding-top: 7%;
+        padding-left: 10%;
+    }
+
+    .p_1 {
+        padding-top: 11%;
+        padding-left: 87px;
+    }
+
+    .table_parent {
+        margin: 16% 17px 0px 17px;
+    }
+
+}
+
+
+
+@media(min-width:900px)and (max-width:992px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        padding: 10px 0px 321px 13%;
+    }
+
+    .navbar1 {
+        padding: 10px 0px 0px 19.3%;
+
+    }
+
+    .h1_1 {
+        padding-top: 6%;
+        padding-left: 10%;
+    }
+
+    .p_1 {
+        padding-top: 9.5%;
+        padding-left: 95px;
+    }
+
+    .table_parent {
+        margin: 14% 17px 0px 17px;
+
+        th,
+        td {
+            line-height: 33px;
+            font-size: 23px;
+            font-style: bold;
+        }
+    }
+}
+
+@media(min-width:960px)and (max-width:992px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        padding: 10px 0px 321px 13%;
+    }
+
+    .navbar1 {
+        padding: 10px 0px 0px 18.8%;
+
+    }
+
+    .h1_1 {
+        padding-top: 6%;
+        padding-left: 10%;
+    }
+
+    .p_1 {
+        padding-top: 9.7%;
+        padding-left: 99px;
+    }
+
+    .table_parent {
+        margin: 15% 17px 0px 17px;
+
+        th,
+        td {
+            line-height: 35px;
+            font-size: 23px;
+            font-style: bold;
+        }
+    }
+}
+
+@media(min-width:1000px)and (max-width:2000px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        position: absolute;
+        font-weight: bold;
+        font-size: 35px;
+        color: rgb(34, 156, 215);
+        padding: 30px 0px 350px 13%;
+    }
+
+    .navbar1 {
+        position: absolute;
+        font-weight: lighter;
+        font-size: 35px;
+        color: rgb(34, 156, 215);
+        padding: 30px 0px 0px 18.6%;
+    }
+
+    .h1_1 {
+
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        text-transform: uppercase;
+        padding-top: 9%;
+        padding-left: 10%;
+        font-size: 27px;
+        opacity: 0.6;
+    }
+
+    .p_1 {
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        padding-top: 12.5%;
+        padding-left: 99px;
+        padding-bottom: 20px;
+        font-size: 80%;
+        opacity: 0.5;
+    }
+
+    .table_parent {
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        padding: 15px 4px 10px 4px;
+        z-index: 1;
+        box-shadow: -5px -2px 5px 2px rgb(146, 142, 142);
+        border-radius: 5px 5px 5px 5px;
+        margin: 17% 17px 20px 17px;
+
+        th,
+        td {
+            width: 10%;
+            line-height: 20px;
+            padding: 5px 0px;
+            font-size: 20px;
+            font-style: bold;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid rgb(157, 153, 153);
+            border-collapse: collapse;
+            background-color: rgb(240, 236, 236);
+        }
+    }
+}
+
+@media(min-width:1200px)and (max-width:2000px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        font-size: 50px;
+        padding: 30px 0px 350px 13%;
+    }
+
+    .navbar1 {
+        font-size: 50px;
+        padding: 30px 0px 0px 19.5%;
+    }
+
+    .h1_1 {
+        font-size: 50px;
+        padding-top: 8%;
+        padding-left: 10%;
+    }
+
+    .p_1 {
+        font-size: 20px;
+        padding-top: 12.5%;
+        padding-left: 120px;
+    }
+
+    .table_parent {
+        margin: 17% 17px 20px 17px;
+
+        th,
+        td {
+            line-height: 55px;
+            font-size: 35px;
+            font-style: bold;
+        }
+    }
+}
+
+@media(min-width:1300px)and (max-width:2000px) {
+
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        font-size: 50px;
+        padding: 30px 0px 350px 13%;
+    }
+
+    .navbar1 {
+        font-size: 50px;
+        padding: 30px 0px 0px 19%;
+    }
+
+    .h1_1 {
+        font-size: 50px;
+        padding-top: 8%;
+        padding-left: 10%;
+    }
+
+    .p_1 {
+        font-size: 20px;
+        padding-top: 12.5%;
+        padding-left: 130px;
+    }
+
+    .table_parent {
+        margin: 17% 17px 20px 17px;
+
+        th,
+        td {
+            line-height: 55px;
+            font-size: 35px;
+            font-style: bold;
+        }
+    }
+}
+
+
+@media(min-width:1400px)and (max-width:2000px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        font-size: 50px;
+        padding: 30px 0px 350px 13%;
+    }
+
+    .navbar1 {
+        font-size: 50px;
+        padding: 30px 0px 0px 18.7%;
+    }
+
+    .h1_1 {
+        font-size: 50px;
+        padding-top: 8%;
+        padding-left: 10%;
+    }
+
+    .p_1 {
+        font-size: 20px;
+        padding-top: 12.5%;
+        padding-left: 130px;
+    }
+
+    .table_parent {
+        margin: 17% 17px 20px 17px;
+
+        th,
+        td {
+            line-height: 55px;
+            font-size: 35px;
+            font-style: bold;
+        }
+    }
+}
+
+@media(min-width:1500px)and (max-width:2000px) {
+    body {
+        background-color: rgb(228, 230, 230);
+    }
+
+    .navbar {
+        font-size: 50px;
+        padding: 30px 0px 350px 13%;
+    }
+
+    .navbar1 {
+        font-size: 50px;
+        padding: 30px 0px 0px 18.3%;
+    }
+
+    .h1_1 {
+        font-size: 50px;
+        padding-top: 8%;
+        padding-left: 10%;
+    }
+
+    .p_1 {
+        font-size: 20px;
+        padding-top: 12.5%;
+        padding-left: 150px;
+    }
+
+    .table_parent {
+        margin: 17% 17px 20px 17px;
+
+        th,
+        td {
+            line-height: 60px;
+            font-size: 35px;
+            font-style: bold;
+        }
+    }
+}

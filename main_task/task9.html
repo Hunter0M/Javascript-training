@@ -8,11 +8,33 @@
 </head>
 
 <body>
+    <form id="star_form" action="">
+    <label for="rows">Enter the number of rows :</label>
+    <input id="rows" type="text">
+    <input type="submit" value="click here">
+    </form>
+
+    <h1 id="star_rows"></h1>
     <script>
-        let rows = parseInt(prompt('Enter the number of rows : '))
-        for (let i = 1; i <= rows; i++) {
-            console.log("*".repeat(i))
-        }
+        let form=document.getElementById("star_form")
+        form.addEventListener("submit",function(e){
+            //  Prevent the webpage from refreshing
+            e.preventDefault();
+            // Check if inputs have values
+            let rows = document.getElementById("rows").value;
+            if(rows.length==0){
+                document.getElementById("star_rows").innerHTML="Enter number"
+            }
+           for(let i=1;i<=rows;i++){
+            let result=("*".repeat(i))
+            document.getElementById("star_rows").innerHTML=result
+           } 
+        })                  // ????
+
+        // let rows = parseInt(prompt('Enter the number of rows : '))
+        // for (let i = 1; i <= rows; i++) {
+        //     console.log("*".repeat(i))
+        // }
 
     </script>
 </body>

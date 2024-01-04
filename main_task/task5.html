@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <form id="greater_number_form" action="">
+        <label for="num1">Enter the 1st number</label>
+        <input id="num1" type="text"><br><br>
+        <label for="num2">Enter the 2nd number</label>
+        <input id="num2" type="text"><br><br>
+        <label for="num3">Enter the 3rd number</label>
+        <input id="num3" type="text"><br><br>
+        <input type="submit" value="click here">
+    </form>
+    <h1 id="greater_Number"></h1>
+
     <script>
-        let a, b, c;
-        a = parseInt(prompt("Enter the 1st number"))
-        b = parseInt(prompt("Enter the 2nd number"))
-        c = parseInt(prompt("Enter the 3rd number"))
-        if (a > b && a > c) {
-            grade = a + " : is the greater number"
-        }
-        else if (b > a && b > c) {
-            grade = b + " : is the greater number"
-        }
-        else {
-            grade = c + " : is the greater number"
-        }
-        alert(grade)
+        let form = document.getElementById("greater_number_form")
+        form.addEventListener("submit", function (e) {
+            //  Prevent the webpage from refreshing
+            e.preventDefault();
+
+            // Check if inputs have values 
+            let num1 = Number( document.getElementById("num1").value);
+            let num2 = Number( document.getElementById("num2").value);
+            let num3 = Number( document.getElementById("num3").value);
+            if (num1.length == 0 && num2.length == 0 && num3.length == 0) {
+                document.getElementById("greater_Number").innerHTML = " Enter Number"
+            }
+            else if (num1 > num2 && num1 > num3) {
+                result = num1 + " : is the greater number"
+                document.getElementById("greater_Number").innerHTML = result
+            }
+            else if (num2 > num1 && num2 > num3) {
+                result = num2 + " : is the greater number"
+                document.getElementById("greater_Number").innerHTML = result
+            }
+            else {
+                result = num3 + " : is the greater number"
+                document.getElementById("greater_Number").innerHTML = result
+            }
+        })
+        // let a, b, c;
+        // a = parseInt(prompt("Enter the 1st number"))
+        // b = parseInt(prompt("Enter the 2nd number"))
+        // c = parseInt(prompt("Enter the 3rd number"))
+        // if (a > b && a > c) {
+        //     grade = a + " : is the greater number"
+        // }
+        // else if (b > a && b > c) {
+        //     grade = b + " : is the greater number"
+        // }
+        // else {
+        //     grade = c + " : is the greater number"
+        // }
+        // alert(grade)
 
 
     </script>
 </body>
+
 </html>

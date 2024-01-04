@@ -8,32 +8,76 @@
 </head>
 
 <body>
+    <form id="marks_form" action="">
+        <label for="marks"></label>
+        <input id="marks" type="text">
+        <input type="submit" value="click here">
+
+    </form>
+    <h1 id="mrk"></h1>
     <script>
-//         Write that prompts the user to input student marks. The input should be between 0 and 100.Then output the correct grade:
-    // A > 79 , B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40
+        let form = document.getElementById("marks_form")
+        form.addEventListener("submit", function (e) {
+            //  Prevent the webpage from refreshing
+            e.preventDefault();
 
-        let marks = prompt('enter marks');
-        if (marks >= 0 && marks < 100) {
-            if (marks >= 79) {
-                result = 'A'
+            // Check if inputs have values
+            let marks = document.getElementById("marks").value;
+            if (marks.length == 0) {
+                document.getElementById("mrk").innerHTML = 'Enter marks'
             }
-            else if (marks > 60 && marks <= 79) {
-                result = 'B'
-            }
-            else if (marks >= 49 && marks <= 59) {
-                result = 'C'
-            }
-            else if (marks >= 40 && marks < 49) {
-                result = 'D'
-            } else {
-                result = 'E'
-            }
-        }
-        else {
-            result = "error"
-        }
+            // else if (marks >= 0 && marks <= 100){
+            //     result=
+            // }
+                if (marks >= 80 && marks <= 100) {
+                    result = 'A'
+                    document.getElementById("mrk").innerHTML = result
+                }
+                else if (marks >= 60 && marks <= 79) {
+                    result = 'B'
+                    document.getElementById("mrk").innerHTML = result
+                }
+                else if (marks >= 49 && marks <= 59) {
+                    result = 'C'
+                    document.getElementById("mrk").innerHTML = result
+                }
+                else if (marks >= 40 && marks < 49) {
+                    result = 'D'
+                    document.getElementById("mrk").innerHTML = result
+                } else {
+                    result = 'E'
+                    document.getElementById("mrk").innerHTML = result
+                }
 
-        alert(result)
+
+
+
+        })
+        //         Write that prompts the user to input student marks. The input should be between 0 and 100.Then output the correct grade:
+        // A > 79 , B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40
+
+        // let marks = prompt('enter marks');
+        // if (marks >= 0 && marks < 100) {
+        //     if (marks >= 79) {
+        //         result = 'A'
+        //     }
+        //     else if (marks > 60 && marks <= 79) {
+        //         result = 'B'
+        //     }
+        //     else if (marks >= 49 && marks <= 59) {
+        //         result = 'C'
+        //     }
+        //     else if (marks >= 40 && marks < 49) {
+        //         result = 'D'
+        //     } else {
+        //         result = 'E'
+        //     }
+        // }
+        // else {
+        //     result = "error"
+        // }
+
+        // alert(result)
 
 
 

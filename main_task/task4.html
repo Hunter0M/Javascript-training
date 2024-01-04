@@ -8,14 +8,44 @@
 </head>
 
 <body>
+    <form id="form_email" action="">
+        <label for="email">Enter email</label>
+        <input id="email" type="email"><br><br>
+        <input type="submit" value="click here">
+    </form>
+    <h3 id="email_"></h3>
     <script>
-        let email = prompt("enter email")
-        if (email.includes("@") && email.includes(".")) {
-            alert("valid email")
-        }
-        else {
-            alert("invalid email")
-        }
+        let form=document.getElementById("form_email")
+        form.addEventListener("submit",function(e){
+            //  Prevent the webpage from refreshing
+            e.preventDefault();
+
+            // Check if inputs have values
+            let email=document.getElementById("email").value;
+
+            if(email.length==0){
+                document.getElementById("email_").innerHTML="Enter email"
+            }
+            else if (email.includes("@") && email.includes(".")){
+                let email1=email
+                email1="valid email"
+                document.getElementById("email_").innerHTML=email1
+            }
+            else{
+                email1="invalid email"
+                document.getElementById("email_").innerHTML=email1
+            }
+        })
+
+
+
+        // let email = prompt("enter email")
+        // if (email.includes("@") && email.includes(".")) {
+        //     alert("valid email")
+        // }
+        // else {
+        //     alert("invalid email")
+        // }
     </script>
 </body>
 

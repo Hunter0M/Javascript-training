@@ -8,30 +8,76 @@
 </head>
 
 <body>
+    <form id="phone_number" action="">
+        <label for="number">Enter the phone number</label>
+        <input id="number" type="text"><br>
+        <input type="submit" value="click here">
+    </form>
+    <h1 id="result"></h1>
     <script>
-        let phone_number = prompt("Enter the phone number")
-        if (phone_number.startsWith("+254") && phone_number.length == 13) {
-            valid = phone_number + " is valid "
-        }
-        else if (phone_number.startsWith("254") && phone_number.length == 12) {
-            new_number = "+254" + phone_number
-            valid = new_number + " is valid"
-        }
-        else if (phone_number.startsWith("07") && phone_number.length == 10 ||
-            (phone_number.startsWith("01") && phone_number.length == 10)) {
-            new_number = "+254" + phone_number.slice(1)
-            valid = new_number + " is valid"
-        }
-        else if (phone_number.startsWith("7") && phone_number.length == 10 ||
-            (phone_number.startsWith("1") && phone_number.length == 10)) {
-            new_number = "+254" + phone_number
-            valid = new_number + " is valid"
-        }
+        let form = document.getElementById("phone_number")
+        form.addEventListener("submit", function (e) {
+            //  Prevent the webpage from refreshing
+            e.preventDefault();
+            
+            // Check if inputs have values
+            let number = document.getElementById("number").value;
+            if (number.length == 0) {
+                document.getElementById('result').innerHTML = "insert values"
 
-        else {
-            valid = "Invalid phone_number"
-        }
-        alert(valid)
+            } else if (number.startsWith("+254") && number.length == 13) {
+                valid = number + " is valid "
+                document.getElementById('result').innerHTML = valid
+            }
+            else if (number.startsWith("254") && number.length == 12) {
+                new_number = "+254" + number
+                valid = new_number + " is valid"
+                document.getElementById('result').innerHTML = valid
+            }
+            else if (number.startsWith("07") && number.length == 10 ||
+                (number.startsWith("01") && number.length == 10)) {
+                new_number = "+254" + number.slice(1)
+                valid = new_number + " is valid"
+                document.getElementById('result').innerHTML = valid
+            }
+            else if (number.startsWith("7") && number.length == 9 ||
+                (number.startsWith("1") && number.length == 9)) {
+
+                new_number = "+254" + number
+                valid = new_number + " is valid"
+                document.getElementById('result').innerHTML = valid
+            }
+            else {
+                valid = "Invalid phone_number"
+                document.getElementById('result').innerHTML = valid
+            }
+
+        })
+
+
+        // let phone_number = prompt("Enter the phone number")
+        // if (phone_number.startsWith("+254") && phone_number.length == 13) {
+        //     valid = phone_number + " is valid "
+        // }
+        // else if (phone_number.startsWith("254") && phone_number.length == 12) {
+        //     new_number = "+254" + phone_number
+        //     valid = new_number + " is valid"
+        // }
+        // else if (phone_number.startsWith("07") && phone_number.length == 10 ||
+        //     (phone_number.startsWith("01") && phone_number.length == 10)) {
+        //     new_number = "+254" + phone_number.slice(1)
+        //     valid = new_number + " is valid"
+        // }
+        // else if (phone_number.startsWith("7") && phone_number.length == 10 ||
+        //     (phone_number.startsWith("1") && phone_number.length == 10)) {
+        //     new_number = "+254" + phone_number
+        //     valid = new_number + " is valid"
+        // }
+
+        // else {
+        //     valid = "Invalid phone_number"
+        // }
+        // alert(valid)
 
 
     </script>

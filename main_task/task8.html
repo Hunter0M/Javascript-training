@@ -8,21 +8,58 @@
 </head>
 
 <body>
+    <form id="car_s" action="">
+        <label for="SPEED_LIMIT">Enter the speed</label>
+        <input id="car_speed" type="text"><br><br>
+        <input type="submit" value="click here">
+    </form>
+    <h1 id="speed"></h1>
     <script>
-        let car_speed = prompt('Enter the speed')
-        let SPEED_LIMIT = 70; // Define speed limit
-        let d_points = 1
-        if (car_speed <= SPEED_LIMIT) {
-            console.log("OK")
-        }
-        else if (car_speed > SPEED_LIMIT && car_speed <= 75) {
-            
-        }
-        else {
-            d_points = Math.floor((car_speed - 75) / 5);
-        }if(d_points>12){
-            console.log("License suspended")
-        }
+        let form = document.getElementById("car_s")
+        form.addEventListener("submit", function (e) {
+            //  Prevent the webpage from refreshing
+            e.preventDefault();
+
+            // Check if inputs have values
+            let SPEED_LIMIT = document.getElementById("car_speed").value;
+            if (SPEED_LIMIT.length == 0) {
+                document.getElementById("speed").innerHTML = "You have to enter the speed limit"
+            }
+            SPEED_LIMIT = 70 // Define speed limit
+            let d_points = 1
+            let car_speed=0
+            if (car_speed <= SPEED_LIMIT) {
+                result = "OK"
+                document.getElementById("speed").innerHTML = result
+            }
+            else if (car_speed > SPEED_LIMIT && car_speed <= 75) {
+
+            }
+            else {
+                d_points = Math.floor((car_speed - 75) / 5);
+            } if (d_points > 12) {
+                let result1="License suspended"
+                document.getElementById("speed").innerHTML=result1
+
+            }
+        })                       // ????
+
+              
+
+        // let car_speed = prompt('Enter the speed')
+        // let SPEED_LIMIT = 70; // Define speed limit
+        // let d_points = 1
+        // if (car_speed <= SPEED_LIMIT) {
+        //     console.log("OK")
+        // }
+        // else if (car_speed > SPEED_LIMIT && car_speed <= 75) {
+
+        // }
+        // else {
+        //     d_points = Math.floor((car_speed - 75) / 5);
+        // } if (d_points > 12) {
+        //     console.log("License suspended")
+        // }
 
         //         const SPEED_LIMIT = 70; // Define speed limit
 
