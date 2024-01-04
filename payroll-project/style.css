@@ -324,9 +324,8 @@
 
     .table_parent {
         margin: 30% 17px 0px 17px;
-
-        th,
         td {
+            width: 100%;
             line-height: 25px;
         }
     }
