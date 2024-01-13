@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let counter = 4;
+        
+        function logInPassword() {
+            let enteredPassword = prompt(`Enter password (attempts remaining: ${counter} )`)
+
+            if (enteredPassword === "admin@123") {
+                document.write("Access granted!")
+                return;
+            }
+            counter--;
+            if (counter === 0) {
+                // Account locked after 4 attempts
+                document.write("Account blocked incorrect attempts!")
+                return;
+            }        
+                document.write(`Incorrect password. You have ${counter} attempts remaining.`);
+            logInPassword(); // Retry input
+        }
+        logInPassword(); // Start login process
+        
+            
+
+
+
+    </script>
+</body>
+
+</html>

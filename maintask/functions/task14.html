@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function isValidNumber(value) {
+            // Use regular expression to check if the value is a valid number or float
+            return /^[+-]?\d+(\.\d+)?$/.test(value);
+        }
+        function addNumbers() {
+            let input1 = prompt("Enter the first number:");
+            let input2 = prompt("Enter the second number:");
+
+            // Check if both inputs are valid numbers or floats
+            if (isValidNumber(input1) && isValidNumber(input2)) {
+                // Convert inputs to numbers and perform addition
+                let result = parseFloat(input1) + parseFloat(input2);
+                console.log("The result of addition is: " + result)
+                // alert("The result of addition is: " + result);
+            } else {
+                console.log("Invalid character entered. Please enter numbers or floats only.")
+                // alert("Invalid character entered. Please enter numbers or floats only.");
+                addNumbers(); // Re-run the function for re-entering valid inputs
+            }
+        }
+
+        // Call the function to start the program
+        addNumbers();
+
+
+
+
+    </script>
+</body>
+
+</html>

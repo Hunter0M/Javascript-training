@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function logInEmail() {
+            let email = prompt("enter email")
+            let valid = email
+
+            if (email.includes("@") && email.includes(".")) {
+
+                valid = "valid email"
+            }
+            else {
+                valid = "invalid email"
+            }
+            return valid
+        }
+        let result = logInEmail()
+        document.write((result))
+    </script>
+</body>
+
+</html>

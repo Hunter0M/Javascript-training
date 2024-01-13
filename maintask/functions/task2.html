@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+         let value=0
+        function isEven(number) {
+            if (number % 2 === 0) {
+                value= "The number is even";
+            } 
+            
+            else if (number1 % 4 == 0){
+                value="Number divisible by 4"
+            }
+            else {
+               value= "The number is odd";
+            }
+            return value
+        }
+        
+        let num=prompt("enter number")
+        let result=isEven(num);
+        document.write((result))
+    </script>
+</body>
+
+</html>

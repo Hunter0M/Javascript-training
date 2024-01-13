@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function greaterNumber(num1, num2, num3, num4) {
+            let result = 0;
+
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+            num3 = parseFloat(num3);
+            num4 = parseFloat(num4);
+
+            if (num1 > num2 && num1 > num3 && num1 > num4) {
+                result = num1 + " is the greater number";
+            } else if (num2 > num1 && num2 > num3 && num2 > num4) {
+                result = num2 + " is the greater number";
+            } else if (num3 > num1 && num3 > num2 && num3 > num4) {
+                result = num3 + " is the greater number";
+            } else {
+                result = num4 + " is the greater number";
+            }
+
+            return result;
+        }
+        let num1 = prompt("Enter the 1st number");
+        let num2 = prompt("Enter the 2nd number");
+        let num3 = prompt("Enter the 3rd number");
+        let num4 = prompt("Enter the 4th number");
+
+        let result = greaterNumber(num1, num2, num3, num4);
+        document.write(result);
+
+
+
+
+
+
+        // function greaterNumber(num1, num2, num3, num4) {
+        //     let result = 0
+
+        //     if (num1 > num2 && num1 > num3 && num1 > num4) {
+        //         result = num1 + " : is the greater number"
+        //     }
+        //     else if (num2 > num1 && num2 > num3 && num2 > num4) {
+        //         result = num2 + " : is the greater number"
+        //     }
+        //     else if (num3 > num1 && num3 > num2 && num3 > num4) {
+        //         result = num3 + " : is the greater number"
+        //     }
+
+        //     else {
+        //         result = num4 + " : is the greater number"
+        //     }
+        //     return result
+        // }
+        // let num1 = prompt("Enter the 1st number")
+        // let num2 = prompt("Enter the 2nd number")
+        // let num3 = prompt("Enter the 3rd number")
+        // let num4 = prompt("Enter the 4th number")
+        // let result = greaterNumber(num1, num2, num3, num4)
+        // document.write((result))
+
+        // function GreaterNumber(a, b, c, d) {
+
+        //     if (a > b && a > c && a > d) {
+        //         grade = a + " : is the greater number"
+        //     }
+        //     else if (b > a && b > c && b > d) {
+        //         grade = b + " : is the greater number"
+        //     } else if (c > a && c > b && c > d) {
+        //         grade = c + " : is the greater number"
+        //     }
+        //     else {
+        //         grade = d + " : is the greater number"
+        //     }
+        //     return grade
+        // }
+        // let a = prompt("Enter the 1st number")
+        // let b = prompt("Enter the 2nd number")
+        // let c = prompt("Enter the 3rd number")
+        // let d = prompt("Enter the 4th number")
+        // let grade = GreaterNumber(a, b, c, d)
+        // console.log(grade)
+        // document.write((grade))
+
+
+
+
+    </script>
+</body>
+
+</html>

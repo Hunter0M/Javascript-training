@@ -1,11 +1,16 @@
 let form = document.getElementById('salary-form')
+window.onload = function () {
+    basicsalary.focus();
+// }
 form.addEventListener("submit", function (e) {
     //  Prevent the webpage from refreshing
     e.preventDefault();
 
     // Check if inputs have values
-    let basicsalary =parseFloat( document.getElementById("basic-salary").value);
-    let benefits = parseFloat( document.getElementById("benefits").value);
+    let basicsalary = parseFloat(document.getElementById("basicsalary").value);
+    let benefits = parseFloat(document.getElementById("benefits").value);
+
+
     // let table = document.getElementById("salary_table")
 
     let NHIF = 0
@@ -15,8 +20,8 @@ form.addEventListener("submit", function (e) {
     }
     else {
         let gross_Salary = basicsalary + benefits
-        
-        document.getElementById("gross_Salary").innerText = gross_Salary
+
+    document.getElementById("gross_Salary").innerHTML = gross_Salary
 
 
         // nhif
@@ -61,7 +66,7 @@ form.addEventListener("submit", function (e) {
             NHIF = 1600
         } else {
             NHIF = 1700
-
+            form.reset();
         }
         document.getElementById("nhif").innerHTML = NHIF
     }
@@ -70,39 +75,40 @@ form.addEventListener("submit", function (e) {
     let NSSF = 0
     if (gross_Salary <= 18000) {
         NSSF = (gross_Salary * 0.06)
-        
+
     } else {
         NSSF = (18000 * 0.06)
-        document.getElementById("nssf").innerHTML=NSSF
+        document.getElementById("nssf").innerHTML = NSSF
     }
 
     // NHDF
-    let NHDF =parseFloat( gross_Salary )*0.015
-    
+    console.log(gross_Salary)
+    let NHDF = gross_Salary * 0.015
+
     console.log('NHDF is : ' + NHDF)
-    document.getElementById("nhdf").innerHTML=NHDF
+    document.getElementById("nhdf").innerHTML = NHDF
 
     // TAXABLE INCOME
     let taxable_income = gross_Salary - (NSSF + NHDF)
-    document.getElementById("taxable_income").innerText=taxable_income
-        // console.log(`Your taxable income is : ${taxable_income} `)
+    document.getElementById("taxable_income").innerText = taxable_income
+    // console.log(`Your taxable income is : ${taxable_income} `)
 
-        // PAYEE
-        let PAYEE = 0
-        if (taxable_income >= 0 && taxable_income <= 24000) {
-            PAYEE = 24000 * 0.1
-        }
-        else if (taxable_income > 24000 && taxable_income <= 32333) {
-            PAYEE = ((taxable_income * 0.25) + (24000 * 0.1)) - 2400
-        }
-        else {
-            PAYEE = ((taxable_income * 0.3) + (taxable_income * 0.25) + (24000 * 0.1)) - 2400
-       document.getElementById("payee").innerHTML=PAYEE
-        }
-        console.log(`Your person's PAYEE is : ${PAYEE}`)
+    // PAYEE
+    let PAYEE = 0
+    if (taxable_income >= 0 && taxable_income <= 24000) {
+        PAYEE = 24000 * 0.1
+    }
+    else if (taxable_income > 24000 && taxable_income <= 32333) {
+        PAYEE = ((taxable_income * 0.25) + (24000 * 0.1)) - 2400
+    }
+    else {
+        PAYEE = ((taxable_income * 0.3) + (taxable_income * 0.25) + (24000 * 0.1)) - 2400
+        document.getElementById("payee").innerHTML = PAYEE
+    }
+    console.log(`Your person's PAYEE is : ${PAYEE}`)
 
-        // 
-    
+    // 
+
     // console.log(" NSSF is : " + NSSF)
     // else {
 

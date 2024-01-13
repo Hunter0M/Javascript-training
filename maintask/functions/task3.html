@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function phoneNumber() {
+            let number = prompt('enter phone number')
+            let valid = ""
+            if (number.startsWith("+254") && number.length == 13) {
+                valid = number + " is valid "
+            }
+            else if (number.startsWith("254") && number.length == 12) {
+                new_number = "+254" + number
+                valid = new_number + " is valid"
+            }
+            else if (number.startsWith("07") && number.length == 10 ||
+                (number.startsWith("01") && number.length == 10)) {
+                new_number = "+254" + number.slice(1)
+                valid = new_number + " is valid"
+            }
+            else if (number.startsWith("7") && number.length == 9 ||
+                (number.startsWith("1") && number.length == 9)) {
+                new_number = "+254" + number
+                valid = new_number + " is valid"
+            }
+            else {
+                valid = "Invalid phone_number"
+            }
+            return valid
+        }
+        let result = phoneNumber();
+        document.write((result))
+    </script>
+</body>
+
+</html>

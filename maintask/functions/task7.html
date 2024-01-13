@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function studentMarks() {
+            let marks = prompt("Enter marks")
+            if (marks >= 80 && marks <= 100) {
+                marksOf = 'A'
+                marksOfStudent = marksOf
+            }
+            else if (marks >= 60 && marks <= 79) {
+                marksOf = 'B'
+                marksOfStudent = marksOf
+            }
+            else if (marks >= 50 && marks <= 59) {
+                marksOf = 'C'
+                marksOfStudent = marksOf
+            }
+            else if (marks >= 40 && marks <= 49) {
+                marksOf = 'D'
+                marksOfStudent = marksOf
+            }
+            else {
+                marksOf = 'E'
+                marksOfStudent = marksOf
+            }
+            return marksOfStudent
+        }
+        let result = studentMarks();
+        document.write((result))
+    </script>
+</body>
+
+</html>

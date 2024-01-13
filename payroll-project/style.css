@@ -3,88 +3,6 @@
     padding: 0;
 }
 
-/* .salary_parent {
-    display: flex;
-    background-color: white;
-    flex-flow: column wrap;
-    justify-content: center;
-} */
-
-/* .navbar {
-    position: absolute;
-    font-weight: bold;
-    font-size: 35px;
-    color: rgb(34, 156, 215);
-    padding: 0px 12px 250px 14%;
-}
-
-.navbar1 {
-    position: absolute;
-    font-weight: lighter;
-    font-size: 35px;
-    color: rgb(34, 156, 215);
-    padding-left: 200px;
-    padding-bottom: 250px;
-}
-
-.h1_1 {
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    text-transform: uppercase;
-    padding-top: 10%;
-    padding-left: 8%;
-    font-size: 27px;
-    opacity: 0.7;
-} */
-
-/* .p_1 {
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    padding-top: 14%;
-    padding-left: 80px;
-    padding-bottom: 20px;
-    font-size: 70%;
-    opacity: 0.5;
-} */
-
-/* .table_parent {
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    padding-top: 20px;
-    padding-bottom: 23px;
-    z-index: 1;
-    box-shadow: -5px -2px 5px 2px rgb(187, 181, 181);
-    border-radius: 5px 5px 5px 5px;
-    margin: 80px 17px 0px 17px;
-
-    th,
-    td {
-        width: 10%;
-        line-height: normal;
-        padding: px 10px;
-    }
-
-    table,
-    th,
-    td {
-        border: 1px solid rgb(157, 153, 153);
-        border-collapse: collapse;
-        background-color: rgb(245, 245, 245);
-    }
-} */
-
-/* .text_input {
-    opacity: 0.6;
-    border-color: black;
-    border-radius: 3px 0px 0px 3px;
-
-} */
-
-
-/* .salary_item {
-    font-family: Arial, Helvetica, sans-serif;
-} */
-
 @media only screen and (max-width:340px) {
     body {
         background-color: rgb(228, 230, 230);
@@ -154,13 +72,6 @@
     }
 }
 
-/* .salary-form{
-    font-size: x-large;
-}
-.label_form{
-        font-size: 10%;
-    
-    } */
 @media(min-width:341px)and (max-width:992px) {
     body {
         background-color: rgb(228, 230, 230);
@@ -296,7 +207,7 @@
     }
 
     .navbar1 {
-        padding: 20px 0px 0px 27%;
+        padding: 20px 0px 0px 25.5%;
     }
 }
 @media(min-width:412px)and (max-width:992px) {
@@ -309,17 +220,17 @@
     }
 
     .navbar1 {
-        padding: 10px 0px 0px 25.5%;
+        padding: 10px 0px 0px 24%;
     }
     .h1_1 {
-        padding-top: 15%;
-        padding-left: 11%;
+        padding-top: 13%;
+        padding-left: 7%;
         opacity: 0.6;
     }
 
     .p_1 {
-        padding-top: 23.5%;
-        padding-left: 49px;
+        padding-top: 20%;
+        padding-left: 33px;
     }
 
     .table_parent {
@@ -336,11 +247,30 @@
     }
 
     .navbar {
-        padding: 40px 0px 321px 12%;
+        padding: 10px 0px 321px 12%;
     }
 
     .navbar1 {
-        padding: 40px 0px 0px 25%;
+        padding: 10px 0px 0px 24%;
+    }
+    .h1_1 {
+        padding-top: 12%;
+        padding-left: 7%;
+        opacity: 0.6;
+    }
+
+    .p_1 {
+        padding-top: 19%;
+        padding-left: 35px;
+    } 
+
+    .table_parent {
+        margin: 27% 17px 0px 17px;
+
+        th,
+        td {
+            line-height: 28px;
+        }
     }
 }
 
@@ -350,17 +280,32 @@
     }
 
     .navbar {
-        padding: 40px 0px 321px 12%;
+        padding: 10px 0px 321px 12%;
     }
 
     .navbar1 {
-        padding: 40px 0px 0px 24%;
+        padding: 10px 0px 0px 24%;
 
     }
 
+    .h1_1 {
+        padding-top: 12%;
+        padding-left: 7%;
+        opacity: 0.6;
+    }
+
     .p_1 {
-        padding-top: 32%;
-        padding-left: 49px;
+        padding-top: 19%;
+        padding-left: 35px;
+    } 
+
+    .table_parent {
+        margin: 27% 17px 0px 17px;
+
+        th,
+        td {
+            line-height: 28px;
+        }
     }
 }
 
@@ -370,26 +315,26 @@
     }
 
     .navbar {
-        padding: 40px 0px 321px 16%;
+        padding: 10px 0px 321px 16%;
     }
 
     .navbar1 {
-        padding: 40px 0px 0px 27%;
+        padding: 10px 0px 0px 26.3%;
     }
 
     .h1_1 {
-        padding-top: 17%;
+        padding-top: 11%;
         padding-left: 11%;
         opacity: 0.6;
     }
 
     .p_1 {
-        padding-top: 23.5%;
-        padding-left: 57px;
+        padding-top: 17%;
+        padding-left: 60px;
     }
 
     .table_parent {
-        margin: 31% 17px 0px 17px;
+        margin: 24% 17px 0px 17px;
 
         th,
         td {
@@ -472,16 +417,16 @@
     }
 
     .navbar1 {
-        padding: 10px 0px 0px 21%;
+        padding: 10px 0px 0px 20.3%;
     }
     .h1_1 {
         padding-top: 8%;
-        padding-left: 10%;
+        padding-left: 9%;
     }
 
     .p_1 {
-        padding-top: 12.8%;
-        padding-left: 74px;
+        padding-top: 12.4%;
+        padding-left: 68px;
     }
 
     .table_parent {
@@ -597,7 +542,10 @@
     }
 }
 
-@media(min-width:1000px)and (max-width:2000px) {
+
+
+
+@media(min-width:900px)and (max-width:2000px) {
     body {
         background-color: rgb(228, 230, 230);
     }
@@ -607,7 +555,7 @@
         font-weight: bold;
         font-size: 35px;
         color: rgb(34, 156, 215);
-        padding: 30px 0px 350px 13%;
+        padding: 10px 0px 350px 13%;
     }
 
     .navbar1 {
@@ -615,7 +563,7 @@
         font-weight: lighter;
         font-size: 35px;
         color: rgb(34, 156, 215);
-        padding: 30px 0px 0px 18.6%;
+        padding: 10px 0px 0px 18.4%;
     }
 
     .h1_1 {
@@ -623,7 +571,7 @@
         font-family: Arial, Helvetica, sans-serif;
         position: absolute;
         text-transform: uppercase;
-        padding-top: 9%;
+        padding-top: 6%;
         padding-left: 10%;
         font-size: 27px;
         opacity: 0.6;
@@ -632,9 +580,9 @@
     .p_1 {
         font-family: Arial, Helvetica, sans-serif;
         position: absolute;
-        padding-top: 12.5%;
-        padding-left: 99px;
-        padding-bottom: 20px;
+        padding-top: 10%;
+        padding-left: 100px;
+        padding-bottom: 16px;
         font-size: 80%;
         opacity: 0.5;
     }
@@ -646,12 +594,12 @@
         z-index: 1;
         box-shadow: -5px -2px 5px 2px rgb(146, 142, 142);
         border-radius: 5px 5px 5px 5px;
-        margin: 17% 17px 20px 17px;
+        margin: 14% 17px 20px 17px;
 
         th,
         td {
             width: 10%;
-            line-height: 20px;
+            line-height: 25px;
             padding: 5px 0px;
             font-size: 20px;
             font-style: bold;
@@ -745,7 +693,6 @@
         }
     }
 }
-
 
 @media(min-width:1400px)and (max-width:2000px) {
     body {

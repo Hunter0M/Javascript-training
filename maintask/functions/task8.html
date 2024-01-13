@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checkSpeed(speed) {
+            const speedLimit = 70;
+            const demeritPointsThreshold = 12;
+            const demeritPointsPer5Km = 1;
+
+            if (speed < speedLimit) {
+                console.log("Ok");
+            } else {
+                const demeritPoints = Math.floor((speed - speedLimit) / 5);
+
+                if (demeritPoints > demeritPointsThreshold) {
+                    console.log("License suspended");
+                } else {
+                    console.log("Points: " + demeritPoints);
+                }
+            }
+        }
+        let speed = prompt("enter speed")
+        let result = checkSpeed(speed);
+    </script>
+</body>
+
+</html>

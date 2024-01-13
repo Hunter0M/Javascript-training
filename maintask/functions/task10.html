@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function totalStock() {
+            let total_stock = 0
+            let prods = [['omo', '30kshs', '300'], ['milk', '50kshs', '200'],
+            ['bread', '45kshs', '359'], ['coffe', '5kshs', '79']]
+            for (i = 0; i < prods.length; i++) {
+                let N_prods = prods[i][2]
+                let stock = Number(N_prods)
+                total_stock += stock 
+                sto = total_stock
+            }
+            return sto
+        }
+        let result = totalStock();
+        document.write((result))
+    </script>
+</body>
+
+</html>

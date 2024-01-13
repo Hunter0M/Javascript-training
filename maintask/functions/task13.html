@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function validateLogin() {
+            let attempts = 3;
+            let validEmail = "admin@mail.com";
+            let validPassword = "Admin@123";
+
+            while (attempts > 0) {
+                let email = prompt("Enter your email:");
+                let password = prompt("Enter your password:");
+
+                if (email === validEmail && password === validPassword) {
+                    console.log("Login is Successful");
+                    break; // Exit the loop if login is successful
+                } else {
+                    attempts--;
+                    console.log("Invalid username or password. Attempts remaining:", attempts);
+                }
+            }
+
+            if (attempts === 0) {
+                console.log("You have been blocked.");
+            }
+        }
+        validateLogin();
+        
+    </script>
+</body>
+
+</html>
