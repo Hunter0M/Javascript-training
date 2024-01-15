@@ -12,9 +12,11 @@
         let basic = Number(prompt("Enter the basic salary"))
         let benefits = Number(prompt("Enter the benefits"))
 
+        
+
         function grossSalary() {
             if (basic.length == 0 && benefits.length == 0) {
-                document.getElementById("error").innerHTML = "Make sure all fields are filled in"
+                // document.getElementById("error").innerHTML = "Make sure all fields are filled in"
             }
             else {
                 let gross_Salary = basic + benefits
@@ -61,27 +63,31 @@
 
             //  NSSF 
             let NSSF = 0
-            let gross_Salary =""
+            // let gross_Salary =""
             if ( gross_Salary <= 18000) {
                 NSSF = (gross_Salary * 0.06)
             }
             else {
                 NSSF = (18000 * 0.06)
             }
+           
             console.log(" NSSF is : " + NSSF)
             
             // NHDF
             gross_Salary = basic + benefits
             let NHDF = gross_Salary * 0.015
+            return NHDF
             console.log('NHDF is : ' + NHDF)
 
             // TAXABLE INCOME
             let taxable_income = gross_Salary - (NSSF + NHDF)
+            return taxable_income
             console.log(`Your taxable income is : ${taxable_income} `)
 
 
             // Relief
             let relief = 2400
+            return relief
             console.log('relife is : ' + relief)
 
             // PAYEE
@@ -101,10 +107,12 @@
             else {
                 PAYEE = ((taxable_income - 800000) * 0.35) + ((24000 * 0.1) + (8333 * 0.25) + (467667 * 0.3) + (300000 * 0.325)) - relief
             }
+            return PAYEE
             console.log('payee is : ' + PAYEE)
 
             // NET PAY 
             let net_pay = gross_Salary - (NHIF + PAYEE + NSSF + NHDF)
+            return net_pay
             console.log('NET PAY is : ' + net_pay)
         }
         grossSalary();
