@@ -1,0 +1,59 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+#nav{
+    padding: 0px;
+}
+.fs-3 {
+    position: relative;
+    font-weight: bold;
+    font-size: 35px;
+    color: rgb(34, 156, 215);
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.text_1 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    text-transform: uppercase;
+    padding-top: 0.4%;
+    padding-left: 6%;
+    font-size: 27px;
+    opacity: 0.6;
+}
+
+.text_2 {
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding-left: 30px;
+    padding-top: 1%;
+    font-size: 105%;
+    opacity: 0.5;
+}
+
+.btn_Calculate {
+    background-color: rgb(241, 147, 55);
+    color: white;
+}
+
+.table {
+    z-index: 2;
+    box-shadow: -5px -2px 5px 2px rgb(163, 160, 160);
+    border-radius: 4px;
+    background-color: rgb(240, 236, 236);
+    margin-top: 10px;
+
+    width: 100%;
+
+}
+
+.from_1 {
+    z-index: 2;
+    margin-left: 13px;
+    margin-top: 20px;
+    padding-top: 5px;
+    border-radius: 4px;
+}

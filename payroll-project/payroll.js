@@ -1,7 +1,7 @@
 let form = document.getElementById('salary-form')
 window.onload = function () {
     basicsalary.focus();
-// }
+}
 form.addEventListener("submit", function (e) {
     //  Prevent the webpage from refreshing
     e.preventDefault();
